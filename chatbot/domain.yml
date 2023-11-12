@@ -1,0 +1,34 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Saudações! Como vai você?"
+
+  utter_cheer_up:
+  - text: "Poxa, aqui vai algo para te animar"
+    image: "https://media.tenor.com/f_saBHiUTz0AAAAC/cute-cat.gif"
+
+  utter_did_that_help:
+  - text: "Isso te ajudou?"
+
+  utter_happy:
+  - text: "Ótimo, fico feliz também!"
+
+  utter_goodbye:
+  - text: "Até mais."
+
+  utter_iamabot:
+  - text: "Eu sou um bot! Criado por:\nDaniel Tagame\nGiovanni Siervo\nLucas Ferreira\nMatheus Soares"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,84 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - oi
+    - olá
+    - ola
+    - eae
+    - eai
+    - salve
+    - ei
+    - bom dia
+    - boa tarde
+    - boa noite
+  
+
+- intent: goodbye
+  examples: |
+    - tchau
+    - xau
+    - tchau tchau
+    - falou
+    - flw
+    - adeus
+    - até logo
+    - ate logo
+    - até mais
+    - ate mais
+
+- intent: affirm
+  examples: |
+    - sim
+    - s
+    - claro
+    - isso mesmo
+    - isso
+    - correto
+    - certo
+    - exato
+    - positivo
+    - com certeza
+
+- intent: deny
+  examples: |
+    - não
+    - nao
+    - n
+    - nunca
+    - errado
+    - incorreto
+    - jamais
+    - negativo
+
+- intent: mood_great
+  examples: |
+    - perfeito
+    - ótimo
+    - maravilhoso
+    - estou bem
+    - muito bem
+    - estou me sentindo ótimo
+    - to bem
+    - estou feliz
+
+
+- intent: mood_unhappy
+  examples: |
+    - estou triste
+    - não estou muito bem
+    - não estou bem
+    - triste
+    - muito triste
+    - meu dia foi péssimo
+    - tive um dia ruim
+    
+
+- intent: bot_challenge
+  examples: |
+    - você é um bot?
+    - você é um robô?
+    - você é um humano?
+    - estou falando com um bot?
+    - estou falando com um humano?
