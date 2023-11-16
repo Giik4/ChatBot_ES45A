@@ -1,0 +1,36 @@
+version: "3.1"
+
+stories:
+
+- story: path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_burguer
+  - intent: order_burguer
+    entities:
+    - burguers: "x-burguer"
+  - action: utter_drinks
+  - intent: order_drinks
+    entities:
+    - drinks: "refrigerante"
+  - action: utter_confirm_order
+  - intent: affirm
+  - action: utter_despedida
+
+
+- story: path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_burguer
+  - intent: order_burguer
+    entities:
+    - burguers: "x-burguer"
+  - action: utter_drinks
+  - intent: order_drinks
+    entities:
+    - drinks: "refrigerante"
+  - action: utter_confirm_order
+  - intent: deny
+  - action: utter_repeat_order

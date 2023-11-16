@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-burguer",
+      "2": "I-burguer",
+      "3": "L-burguer",
+      "4": "U-burguer",
+      "5": "B-burguers",
+      "6": "I-burguers",
+      "7": "L-burguers",
+      "8": "U-burguers",
+      "9": "B-drink",
+      "10": "I-drink",
+      "11": "L-drink",
+      "12": "U-drink",
+      "13": "B-drinks",
+      "14": "I-drinks",
+      "15": "L-drinks",
+      "16": "U-drinks",
+      "17": "B-size",
+      "18": "I-size",
+      "19": "L-size",
+      "20": "U-size",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-burguer": 1,
+      "I-burguer": 2,
+      "L-burguer": 3,
+      "U-burguer": 4,
+      "B-burguers": 5,
+      "I-burguers": 6,
+      "L-burguers": 7,
+      "U-burguers": 8,
+      "B-drink": 9,
+      "I-drink": 10,
+      "L-drink": 11,
+      "U-drink": 12,
+      "B-drinks": 13,
+      "I-drinks": 14,
+      "L-drinks": 15,
+      "U-drinks": 16,
+      "B-size": 17,
+      "I-size": 18,
+      "L-size": 19,
+      "U-size": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

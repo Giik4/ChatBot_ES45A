@@ -1,0 +1,91 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Olá
+    - Oi
+    - Eae
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+
+- intent: order_burguer
+  examples: |
+    - Quero pedir um [x-burguer]{"entity": "burguers"}
+    - Eu quero um [x-bacon]{"entity": "burguers"}
+    - Me traz um [x-salada]{"entity": "burguers"}
+    - Um [x-burguer]{"entity": "burguers"} por favor
+    - Quero um [x-bacon]{"entity": "burguers"}
+    - Gostaria de pedir um [x-bacon]{"entity": "burguers"}
+    - Gostaria de pedir um [x-salada]{"entity": "burguers"}
+
+
+- intent: order_drinks
+  examples: |
+    - Quero uma [cerveja]{"entity": "drinks"}
+    - Quero um [refrigerante]{"entity": "drinks"}
+    - Gostaria de um [refrigerante]{"entity": "drinks"}
+    - Gostaria de uma [cerveja]{"entity": "drinks"}
+    - Me traz um [suco]{"entity": "drinks"}
+    - Quero beber um [refrigerante]{"entity": "drinks"}
+    - Uma [cerveja]{"entity": "drinks"} por favor
+    - Um [suco]{"entity": "drinks"}
+    - [refrigerante]{"entity": "drinks"}
+  
+- intent: list_burguers
+  examples: |
+    - Qual o cardápio?
+    - Gostaria de ver o cardápio
+    - Tem quais lanches?
+    - Quais lanches estão disponíveis?
+    - Quero uma lista dos lanches
+    - Tem [x-bacon]{"entity": "burguers"}?
+    - Vocês fazem [x-salada]{"entity": "burguers"}?
+    - O [x-burguer]{"entity": "burguers"} está disponível?
+    - Quais lanches vocês tem?
+
+- intent: list_drinks
+  examples: |
+    - Quais bebidas tem?
+    - O que tem para beber?
+    - Tem [refrigerante]{"entity": "drinks"}?
+    - Vocês tem [suco]{"entity": "drinks"}?
+    - Tem [cerveja]{"entity": "drinks"}?
+    - Vocês vendem [refrigerante]{"entity": "drinks"}?
+
+- intent: affirm
+  examples: |
+    - sim
+    - pode
+    - s
+    - claro
+    - isso mesmo
+    - isso
+    - correto
+    - certo
+    - exato
+    - positivo
+    - com certeza
+
+- intent: deny
+  examples: |
+    - não
+    - nao
+    - não pode
+    - n
+    - nunca
+    - errado
+    - incorreto
+    - negativo
+
+- intent: thankyou
+  examples: |
+    - Obrigado!
+    - Vlw
+    - Muito obrigado
+    - Valeu
+    - Tchau
+    - Xau
+    - Flw
+    - Falou

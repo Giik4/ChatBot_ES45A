@@ -1,0 +1,22 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"list_drinks\"}}]": "utter_list_drinks",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"list_drinks\"}}, {\"prev_action\": {\"action_name\": \"utter_list_drinks\"}, \"user\": {\"intent\": \"list_drinks\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"list_burguers\"}}]": "utter_list_burguers",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"list_burguers\"}}, {\"prev_action\": {\"action_name\": \"utter_list_burguers\"}, \"user\": {\"intent\": \"list_burguers\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"list_drinks\"}}, {\"prev_action\": {\"action_name\": \"utter_list_drinks\"}, \"user\": {\"intent\": \"list_drinks\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"list_burguers\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"list_burguers\"}}, {\"prev_action\": {\"action_name\": \"utter_list_burguers\"}, \"user\": {\"intent\": \"list_burguers\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"list_drinks\"}}]"
+    ]
+  }
+}
