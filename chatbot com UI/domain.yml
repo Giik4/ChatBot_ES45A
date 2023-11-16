@@ -1,0 +1,58 @@
+version: "3.1"
+
+intents:
+  - greet
+  - order_burguer
+  - order_drinks
+  - list_burguers
+  - list_drinks
+  - thankyou
+  - affirm
+  - deny
+  
+entities:
+  - burguers
+  - drinks
+
+responses:
+  utter_greet:
+  - text: "Olá! Aqui é Hamburgueria X. Estarei anotando seu pedido!"
+
+  utter_list_burguers:
+  - text: "Temos os lanches: X-burguer, X-bacon e X-salada."
+
+  utter_list_drinks:
+  - text: "Temos refrigerante, suco e cerveja"
+   
+  utter_confirm_order:
+  - text: "Posso confirmar seu pedido: {burguers} e {drinks}?"
+
+  utter_repeat_order:
+  - text: "Por favor, refaça seu pedido."
+  
+  utter_burguer:
+  - text: "Qual lanche você gostaria de pedir?"
+  
+  utter_drinks:
+  - text: "O que gostaria de beber?"
+
+  utter_despedida:
+  - text: "A Hamburgueria X agradece! Até a próxima! =) "
+
+
+slots:
+  burguers:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: burguers
+
+  drinks:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: drinks
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
