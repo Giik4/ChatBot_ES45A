@@ -1,0 +1,1 @@
+Para executar a aplicação, utilize a pasta "chatbot versão final"

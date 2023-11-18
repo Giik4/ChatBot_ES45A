@@ -1,0 +1,17 @@
+Para executar a aplicação, após ter clonado os arquivos desta pasta em sua
+máquina, siga os passos (é necessário ter o Docker instalado):
+
+1- Com o Docker rodando, abra o terminal na pasta onde se encontram os 
+arquivos.
+
+2- Digite o comando "docker compose up --build"
+
+3- Após o término da build, abra qualquer navegador e digite o endereço
+"http://localhost:8080"
+
+4- Clique no balão e envie alguma saudação no chat (olá, oi, eae), pode
+ser que o bot demore uns minutos para a primeira resposta pois após a build 
+o servidor com a IA leva um tempo para ser inicializado.
+
+5- Divirta-se! É possível perguntar ao bot quais os lanches e bebidas
+disponíveis.
